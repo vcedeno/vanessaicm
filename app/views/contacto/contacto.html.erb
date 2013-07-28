@@ -18,13 +18,15 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 		
 		<div id="toplinks">
 			<div id="toplinks_inner">
-				<a href="#">Sitemap</a>
+				<a href="/contacto/contacto/?locale=en"><%=t :ingles%></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/contacto/contacto"><%=t :espanol%></a>
 			</div>
 		</div>
 		<div class="clearer">&nbsp;</div>
 
 		<div id="site_title">
-			<h1><a href="#">Vanessa Cedeño Mieles</a></h1>
+			<h1><a href="/welcome/index">Vanessa Cedeño Mieles <span></span></a></h1>
 		</div>
 
 	</div>
@@ -34,11 +36,11 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 	<div class="center_wrapper">
 	
 		<ul>
-			<li><a href=/welcome/index>Home</a></li>
+			<li class="current_page_item"><a href="/welcome/index">Home</a></li>
 			<li><a href="/page1/cv">CV</a></li>
-			<li><a href="/docencia/docencia">Docencia</a></li>
+			<li><a href="/docencia/docencia"><%=t :docencia%></a></li>
 			<li><a href="http://blog.espol.edu.ec/taws/">TAWS</a></li>
-			<li><a href="/contacto/contacto">Contacto</a></li>
+			<li><a href="/contacto/contacto"><%=t :contacto%></a></li>
 		</ul>
 
 		<div class="clearer">&nbsp;</div>
@@ -56,13 +58,14 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 							<h2>Contacto</h2>
 							<h5><p><b>Vanessa Cedeño Mieles</b>
 						<br>
-							<b>Profesor Auxiliar</b><br></h5>
-Campus Gustavo Galindo, Km 30.5, Vía Perimetral<br>
-Facultad de Ingeniería en Electricidad y Computación<br>
-Coordinadora de Ingeniería en Ciencias Computacionales Sistemas Tecnológicos<br>
+							<b><%=t :profesor%></b><br></h5>
+Campus Gustavo Galindo, Km 30.5, Vía Perimetral
+<br>
+<%=t :facultad%><br>
+<%=t :coord%><br>
 Escuela Superior Politécnica del Litoral (ESPOL)<br></p>
-<p><b>Teléfono:</b> (593) 4-2269852<br>
-<b>WWW: </b><a href="http://www.fiec.espol.edu.ec/~vcedeno">http://www.fiec.espol.edu.ec/~vcedeno/</a>
+<p><b><%=t :telefono%>:</b> (593) 4-2269852<br>
+<b>WWW: </b><a href="http://www.fiec.espol.edu.ec/~vcedeno">http://www.fiec.espol.edu.ec/index.php/Personal-Docente/vcedeno.html</a>
 <br>
 <b>Email: </b>vcedeno
 AT fiec DOT espol DOT edu DOT ec</p>
@@ -75,7 +78,7 @@ AT fiec DOT espol DOT edu DOT ec</p>
 
 					<div id="sidebar_content">
 					
-						<div class="box_title">Páginas</div>
+						<div class="box_title"><%=t :paginas%></div>
 
 						<div class="box_content">
 							<ul>

@@ -8,7 +8,7 @@
 content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superior Politécnica del Litoral, Universidad ESPOL, Ingeniería en ciencias computacionales, Computación">
 	<meta name="author" content="Vanessa Cedeño" />
 	<%= stylesheet_link_tag "style.css" %>
-	<title>Página personal de Vanessa Cedeño Mieles</title>
+	<title>Vanessa Cedeño Mieles</title>
 </head>
 
 <body>
@@ -18,13 +18,15 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 		
 		<div id="toplinks">
 			<div id="toplinks_inner">
-				<a href="#">Sitemap</a>
+				<a href="/page1/cv/?locale=en"><%=t :ingles%></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/page1/cv"><%=t :espanol%></a>
 			</div>
 		</div>
 		<div class="clearer">&nbsp;</div>
 
 		<div id="site_title">
-			<h1><a href="#">Vanessa Cedeño Mieles</a></h1>
+			<h1><a href="/welcome/index">Vanessa Cedeño Mieles <span></span></a></h1>
 		</div>
 
 	</div>
@@ -34,11 +36,11 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 	<div class="center_wrapper">
 	
 		<ul>
-			<li><a href=/welcome/index>Home</a></li>
+			<li class="current_page_item"><a href="/welcome/index">Home</a></li>
 			<li><a href="/page1/cv">CV</a></li>
-			<li><a href="/docencia/docencia">Docencia</a></li>
+			<li><a href="/docencia/docencia"><%=t :docencia%></a></li>
 			<li><a href="http://blog.espol.edu.ec/taws/">TAWS</a></li>
-			<li><a href="/contacto/contacto">Contacto</a></li>
+			<li><a href="/contacto/contacto"><%=t :contacto%></a></li>
 		</ul>
 
 		<div class="clearer">&nbsp;</div>
@@ -56,18 +58,21 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 							<h2>CV</h2>
 						
 						<div id="main_content">
-<p><span lang=EN-US>Versión en pdf: [<a href="/assets/cv.pdf"><span
-style='text-decoration:none;text-underline:none'><img border=0 id="_x0000_i1025" src=/assets/index.gif width="22" height="24"></span></a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span lang=EN-US>pdf <%=t :espanol%>: [<a href="/assets/cv.pdf"><span
+style='text-decoration:none;text-underline:none'><img border=0 id="_x0000_i1025" src=/assets/index.gif width="22" height="24"></span></a>]
+<p><span lang=EN-US>pdf <%=t :ingles%>: [<a href="/assets/cve.pdf"><span
+style='text-decoration:none;text-underline:none'><img border=0 id="_x0000_i1025" src=/assets/index.gif width="22" height="24"></span></a>
+]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
 				<h4 align=center style='text-align:center'><span lang=EN-US><font size="1">Vanessa Cedeño Mieles</font></span></h4>
-				<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>Profesor Auxiliar<br>
-Facultad de Ingeniería en Electricidad y Computación<br>
+				<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><%=t :profesor%><br>
+<%=t :facultad%><br>
 Escuela Superior Politécnica del Litoral<br>
-Página Web: <i><a href="http://www.fiec.espol.edu.ec/~vcedeno">http://www.fiec.espol.edu.ec/~vcedeno/</a></i>
+WWW: <i><a href="http://www.fiec.espol.edu.ec/~vcedeno">http://www.fiec.espol.edu.ec/index.php/Personal-Docente/vcedeno.html</a></i>
 <br>
 Email: <i>vcedeno</i></a><i>
 AT fiec DOT espol DOT edu DOT ec</a></i> </span></p>
 
-							<div class="post_title"><h3>Educación</h3></div>
+							<div class="post_title"><h3><%=t :educacion%></h3></div>
 								<ul>
 								 <li><span lang=EN-US><a
      href="http://www.fsu.edu/"><b>Florida State University</b></a>, Advisor: <a href="http://www.cs.utah.edu/~lifeifei">Feifei Li</a>, <i>08/2008 - 05/2010</i> <br>
@@ -83,103 +88,87 @@ AT fiec DOT espol DOT edu DOT ec</a></i> </span></p>
      <b><i>Bachiller especialización Físico Matemático</i></b></span></li>
      							</ul>	
 							
-							<div class="post_title"><h3><a href="http://scholar.google.com/citations?user=MjEIuDMAAAAJ&hl=es">Publicaciones Recientes</a></h3></div>
-						<p>Por favor referirse a:</p>
+							<div class="post_title"><h3><a href="http://scholar.google.com/citations?user=MjEIuDMAAAAJ&hl=es"><%=t :publi%></a></h3></div>
+						<p><%=t :refe%></p>
 						<p><a href="http://scholar.google.com/citations?user=MjEIuDMAAAAJ&hl=es">[My Google Citation Page]</a></p>
 						
-						<div class="post_title"><h3>Becas, Distinciones Académicas y Certificados</h3></div>
+						<div class="post_title"><h3><p><%=t :honor%></h3></div>
 							<ul>
-								<li>11/2011  Diploma de Honor al Mérito Docente</li>
-								<ul>Otorgado por la “Escuela Superior Politécnica del Litoral”, por haber obtenido una alta calificación en la labor como Profesora de la Facultad de Ingeniería en Electricidad y Computación. En el periodo lectivo 2010-2011.</ul>
-								<li>08/2008  Certificado por aprobar el Programa para la Excelencia en  la Instrucción (Program for Intructional Excellence)</li>
-								<ul>Dictado por Florida State University, Tallahasse, Florida.</ul>
-								<li>03/2008  Beca estudiantil y Ayudantía  de Florida State University</li>
-								<ul>Beca para estudios de Maestría en Ciencias de la Computación. 
-Otorgado por El Departamento de Ciencias de la Computación de Florida State 
-University. Agosto 2008-Abril 2010.</ul>
-								<li>08/2007  Beca FULBRIGHT-SENACYT Postgrados para Estudiantes Ecuatorianos</li>
-								<ul>Beca para estudios de maestría en los Estados Unidos de Norteamérica.  (08/2008 – 05/2010)</ul>
-								<li>10/2006  Premio académico de mejor egresado de la ESPOL, “Escuela Superior Politécnica del Litoral”.</li>
-								<ul>Otorgado al estudiante que obtuvo el más alto promedio de calificaciones entre los 
-estudiantes egresados de la carrera de Ingeniería en Computación especialización 
-Sistemas de Información. En el periodo lectivo 2005-2006.</ul>
-								<li>08/2005  Premio académico de la ESPOL.</li>
-								<ul>Otorgado al estudiante que obtuvo el más alto promedio de calificaciones entre los 
-estudiantes de la carrera de Ingeniería en Computación especialización Sistemas de 
-Información. En el periodo lectivo 2004-2005.</ul>
-								<li>03/2005  Certificado por aprobar el seminario, Object Oriented Business Modeling (Modelo de negocios Orientado a Objetos)</li>
-								<ul>Dictado por la ESPOL, “Escuela Superior Politécnica del Litoral”.</ul>
-								<li>01/2002  Quinto lugar en la clasificación general de los bachilleres</li>
-								<ul>Otorgado por: Colegio Americano de Guayaquil</ul>
-								<li>08/2001  Primera Escolta de la Bandera de Guayaquil</li>
-								<ul>Otorgado por: Colegio Americano de Guayaquil </ul>
-							</ul>	
+								<li><%=t :hon1%></li>
+								<ul><%=t :hon2%></ul>
+								<li><%=t :hon3%></li>
+								<ul><%=t :hon4%></ul>
+								<li><%=t :hon5%></li>
+								<ul><%=t :hon6%></ul>
+								<li><%=t :hon7%></li>
+								<ul><%=t :hon8%></ul>
+								<li><%=t :hon9%></li>
+								<ul><%=t :hon10%></ul>
+								<li><%=t :hon11%></li>
+								<ul><%=t :hon12%></ul>
+								<li><%=t :hon13%></li>
+								<ul><%=t :hon14%></ul>
+								<li><%=t :hon15%></li>
+								<ul><%=t :hon16%></ul>
+								<li><%=t :hon17%></li>
+								<ul><%=t :hon18%></ul>
+							</ul>
 							
-								<div class="post_title"><h3>Experiencia Profesional</h3></div>
+								<div class="post_title"><h3><%=t :exp%></h3></div>
 								<ul>
-								<li>Investigador, Líder de Proyectos, CTI - ESPOL, “Centro de Tecnologías de Información”. 01/05/2012 – Presente</li>
-								<li>Profesora y Coordinadora de la carrera de Ingeniería en Ciencias Computacionales. ESPOL, “Escuela Superior Politécnica del Litoral”. 01/05/2010 – Presente</li>				
-								<li>Asistente de Profesor. Computer Literacy. Florida State University. Departamento de Ciencias de la Computación. 01/08/2008 – 01/12/2009</li>	
-								<li>Desarrollador. CATEG (Corporación para la Administración Temporal de la Energía Eléctrica de Guayaquil). Departamento de Tecnología, Procesos y Desarrollos de Sistemas. 01/07/2007 - 01/07/2008</li>
-								<li>Jefe de Proyectos. Compañía Llerena & Llerena Software - Banco de Guayaquil. 01/06/2006 - 01/06/2007</li>
-								<li>Pasantía. Departamento de Sistemas en el área de Infraestructura Tecnológica del Banco de Guayaquil. 01/03/2006 - 01/05/2006</li>
-								<li>Pasantía. CATEG. 01/03/2005-01/05/2005</li>
+								<li><%=t :exp1%></li>
+								<li><%=t :exp2%></li>
+								<li><%=t :exp3%></li>
+								<li><%=t :exp4%></li>
+								<li><%=t :exp5%></li>
+								<li><%=t :exp6%></li>
+								<li><%=t :exp7%></li>
 							</ul>	
 							
-					<div class="post_title"><h3>Servicios Profesionales</h3></div>
+					<div class="post_title"><h3><%=t :serv%></h3></div>
 								<ul>
-								<li><b>Servicios:</b> Organizadora del concurso “Desarrollo de Aplicaciones Android”, auspiciado por ESPOL y Samsung Electronics. 06/2011-10/2011  </li>
-								<li><b>Miembro de Comités:</b> Panelista para la elección de miembros de Becas Fulbright 2012  </li>				
+								<li><b><%=t :servicios%></b>: <%=t :serv1%></li>
+								<li><b><%=t :comi%></b>: <%=t :comi1%>  </li>				
 							</ul>	
 							
 							
-									<div class="post_title"><h3>Experiencia Docente</h3></div>
+									<div class="post_title"><h3><%=t :docencia%></h3></div>
+								<p><%=t :facultad%>, <%=t :espol%>.</p>
 								<ul>
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> II Término 2012</li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>II Término 2012</li>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>II Término 2012</li>
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> I Término 2012</li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>I Término 2012</li>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>I Término 2012</li>
-<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-II Término 2011</li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-II Término 2011 </li>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-II Término 2011 </li>
-<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-I Término 2011 </li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>  
-I Término 2011 </li>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-I Término 2011 </li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-II Término 2010 </li> 
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-II Término 2010 </li>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br>
-I Término 2010</li>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.<br> 
-I Término 2010</li>			
-							</ul>	
-							
-							
+								I <%=t :term%> 2013
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :fund%></li></ul>
+								II <%=t :term%> 2012
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :bases2%></li>
+								<li><%=t :fund%></li></ul>
+								I <%=t :term%> 2012
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :bases2%></li>
+								<li><%=t :fund%></li></ul>
+								II <%=t :term%> 2011
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :bases2%></li>
+								<li><%=t :fund%></li></ul>
+								I <%=t :term%> 2011
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :bases2%></li>
+								<li><%=t :fund%></li></ul>
+								II <%=t :term%> 2010
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :fund%></li></ul>
+								I <%=t :term%> 2010
+								<ul>	
+								<li><%=t :bases1%></li>
+								<li><%=t :fund%></li></ul>
+							    </ul>	
+										
 					</div>
 				</div>
 
@@ -187,7 +176,7 @@ I Término 2010</li>
 
 					<div id="sidebar_content">
 					
-						<div class="box_title">Páginas</div>
+						<div class="box_title"><%=t :paginas%></div>
 
 						<div class="box_content">
 							<ul>

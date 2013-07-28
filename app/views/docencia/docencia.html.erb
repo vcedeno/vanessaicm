@@ -8,7 +8,7 @@
 content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superior Politécnica del Litoral, Universidad ESPOL, Ingeniería en ciencias computacionales, Computación">
 	<meta name="author" content="Vanessa Cedeño" />
 	<%= stylesheet_link_tag "style.css" %>
-	<title>Página personal de Vanessa Cedeño Mieles</title>
+	<title>Vanessa Cedeño Mieles</title>
 </head>
 
 <body>
@@ -18,13 +18,15 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 		
 		<div id="toplinks">
 			<div id="toplinks_inner">
-				<a href="#">Sitemap</a>
+				<a href="/docencia/docencia/?locale=en"><%=t :ingles%></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/docencia/docencia"><%=t :espanol%></a>
 			</div>
 		</div>
 		<div class="clearer">&nbsp;</div>
 
 		<div id="site_title">
-			<h1><a href="#">Vanessa Cedeño Mieles</a></h1>
+			<h1><a href="/welcome/index">Vanessa Cedeño Mieles <span></span></a></h1>
 		</div>
 
 	</div>
@@ -34,11 +36,11 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 	<div class="center_wrapper">
 	
 		<ul>
-			<li><a href=/welcome/index>Home</a></li>
+			<li class="current_page_item"><a href="/welcome/index">Home</a></li>
 			<li><a href="/page1/cv">CV</a></li>
-			<li><a href="/docencia/docencia">Docencia</a></li>
+			<li><a href="/docencia/docencia"><%=t :docencia%></a></li>
 			<li><a href="http://blog.espol.edu.ec/taws/">TAWS</a></li>
-			<li><a href="/contacto/contacto">Contacto</a></li>
+			<li><a href="/contacto/contacto"><%=t :contacto%></a></li>
 		</ul>
 
 		<div class="clearer">&nbsp;</div>
@@ -55,50 +57,35 @@ content="Vanessa Cedeño, Vanessa Cedeño Mieles, ESPOL, Ecuador, Escuela Superi
 				<div class="left" id="main">
 							
 						
-			<div align="center"><h2>Materias</h2></div>
+			<div align="center"><h2><%=t :materias%></h2></div>
+			<p><%=t :facultad%>, <%=t :espol%>.</p>
 								<ul>
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, II Término 2012<br>Materia Optativa de pregrado 
-								en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, II Término 2012<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, II Término 2012<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, I Término 2012<br>Materia Optativa de pregrado 
-								en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, I Término 2012<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, I Término 2012<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-
-
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, II Término 2011<br>Materia Optativa de pregrado 
-en la Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, II Término 2011<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, II Término 2011<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-
-
-								<li>FIEC05355 SISTEMAS DE BASES DE DATOS II, I Término 2011<br>Materia Optativa de pregrado 
-en la Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, I Término 2011<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, I Término 2011<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, II Término 2010<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, II Término 2010<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-
-<li>FIEC05553 SISTEMAS DE BASES DE DATOS I, I Término 2010<br>Materia Profesional de pregrado en la
-Facultad de Ingeniería en Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-<li>FIEC04341 FUNDAMENTOS DE PROGRAMACIÓN, I Término 2010<br>Materia Profesional de pregrado en la Facultad de Ingeniería en 
-Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
-							</ul>	
+								<p><h3>I <%=t :term%> 2013</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>II <%=t :term%> 2012</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :bases2%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>I <%=t :term%> 2012</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :bases2%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>II <%=t :term%> 2011</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :bases2%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>I <%=t :term%> 2011</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :bases2%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>II <%=t :term%> 2010</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :fund%><br></li><br>
+								<p><h3>I <%=t :term%> 2010</h3></p>
+								<li><%=t :bases1%><br></li>
+								<li><%=t :fund%><br></li><br>
+							    </ul>	
 							
 							
 					</div>
@@ -108,7 +95,7 @@ Electricidad y Computación, Escuela Superior Politécnica del Litoral.</li><br>
 
 					<div id="sidebar_content">
 					
-						<div class="box_title">Páginas</div>
+						<div class="box_title"><%=t :paginas%></div>
 
 						<div class="box_content">
 							<ul>
